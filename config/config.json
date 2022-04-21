@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-world-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    },
+    "card-view-advanced-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/cardViewAdvanced/CardViewAdvancedAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/cardViewAdvanced/CardViewAdvancedAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    },
+    "quick-view-advanced-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/quickViewAdvanced/QuickViewAdvancedAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/quickViewAdvanced/QuickViewAdvancedAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "HelloWorldAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/helloWorld/loc/{locale}.js",
+    "CardViewAdvancedAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/cardViewAdvanced/loc/{locale}.js",
+    "QuickViewAdvancedAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/quickViewAdvanced/loc/{locale}.js"
+  }
+}

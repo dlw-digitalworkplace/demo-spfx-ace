@@ -1,0 +1,50 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.2",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "${title}",
+              "size": "ExtraLarge"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${description}",
+              "size": "Medium"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "style": "emphasis",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "${details}",
+              "weight": "Lighter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Back",
+          "data": {
+            "id": "back"
+          }
+        }
+      ]
+    }
+  ]
+}
